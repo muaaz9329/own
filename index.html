@@ -1,90 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>my first project</title>
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika+New+Basic#standard-styles">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://nyaa.si/user/KaiDubs">
+    <link rel="stylesheet" href="http://nyaa.si0">
+    <link rel="stylesheet" href="imagehover.css">
 
+</head>
+<body>
+    <div class="cont1">
+        <div class="div1">
+            <div class="back-color animate__animated animate__zoomInDown "></div>
+        <img src="img/profile.png" alt="" class="profile-img animate__animated animate__fadeInLeft">
+        <h1 class="p-name tracking-in-contract-bck-top" >Muaaz Khan</h1>
+        <h2 class="p-info tracking-in-contract-bck-top">A Professional Web Designer</h2>
+    </div>
+    <div class="cont2" onmouseover="animation()">
+        <div class="ani">
+        <img src="img/profile2.png" alt="" class="profile2 animate__animated">
+        <div class="para animate__animated">
+            <h1 class="about-me-head">About Me</h1>
+            <p class="about-me">
+                I am A Self taught full stack web Developer as well as web Designer, i am basically good with html,css and javascript that why in my my backend framework I use nodeJS , Beside this I have been on many clients projects so you can totally trust me your projects,With web development I Am good with other programming languges as well such as python,c#,C++ and Object C.
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="cont4" onmouseover="animation2()">
+        <figure class="imghvr-shutter-out-vert cv animation animate__animated">
+            <img src="img/portfolio.png" class="cv-border ">
+            <figcaption>
+              <h1 class="cv-hover  ">Click to download CV</h1> 
+            </figcaption>
+            <a href="cv/portfolio.pdf" download class="cv-download"></a> 
+        </figure>
+        <div class="eyes animation2 animate__animated">
+            <div class="eye ">
+              <div class="ball"></div>
+            </div>
+    </div>
 
-  <body>
-    <table cellspacing="20">
-      <td><img src="user pic.png" alt="" height="200" width="200"></td>
-      <td><h1>Muaaz Khan</h1>
-      <p><em>Founder of upcoming company.</em></p>
-      <p><em>Studied in <b>APS RYK</b> </em></p></td>
-    </table>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at fringilla sapien. Mauris semper erat et posuere lacinia. Suspendisse potenti. Sed in leo non mauris porta scelerisque. Praesent condimentum consequat neque, sed consectetur sem porta lacinia. Ut suscipit volutpat massa a mattis. Vestibulum ut dolor eleifend, pulvinar libero in, vulputate sapien. Vestibulum libero lacus, laoreet ac mattis sit amet, euismod et ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus sed semper leo, sit amet vestibulum dui. Mauris sed risus non ipsum consectetur dictum id quis enim. Integer facilisis sapien sit amet molestie sodales. </p>
-    <hr size='4' noshade>
-    <h3>my favourite writer and ther books</h3>
-    <ol>
-      <li><b>shakespear</b></li>
-      <ul>
-        <li><i>merchant of venice</i></li>
-        <li><i>romeo and julit</i></li>
-      </ul>
-      <li><strong>ashfaq ahmed</strong></li>
-      <ul>
-        <li><i>zawiya 1,2,3</i></li>
-        <li><i>raja gid</i></li>
-      </ul>
-    </ol>
-    <hr size='3' noshade>
-    <h3><i>My websites</i></h3>
-    <ul>
-      <li><a href="https://howicanhelpyou.weebly.com/"><i><b>My Personal Site</b></i></a></li>
-    </ul>
-    <hr>
-    <h3>Education</h3>
-    <table border="2">
-      <tr>
-        <td><b>Year</b></td>
-        <td><b>School/Collage</b></td>
-        <td><b>Degree/level</b></td>
-      </tr>
-      <tr>
-        <td>2005 to 2009</td>
-        <td>fazia</td>
-        <td>junoir School</td>
-      </tr>
-      <tr>
-        <td>2010 to 2016</td>
-        <td>fazia</td>
-        <td>medium School</td>
-      </tr>
-      <tr>
-        <td>2016 to 2018</td>
-        <td>APSACS</td>
-        <td>Matriculation</td>
-      </tr>
-      <tr>
-        <td>2018 to 2020</td>
-        <td>APSACS</td>
-        <td>
-        ICS
-        </td>
-      </tr>
-    </table>
-    <hr size="3" noshade>
-    <h3>Subject Rating</h3>
-    <table>
-      <tr>
-        <td>Computer</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Math</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Physics</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Urdu</td>
-        <td>⭐⭐</td>
-      </tr>
-    </table>
-    <hr>
-    <h2><a href="contact me.html">Contact me</a></h2>
-  </body>
+        </div>
+    </div>
+    <script>
+        function animation(){
+            document.querySelector(".profile2").classList.add("animate__fadeInLeft");
+            document.querySelector(".para").classList.add("animate__fadeInLeft");
+        }
+        function animation2(){
+            document.querySelector(".animation").classList.add("animate__fadeInLeft");
+            document.querySelector(".animation2").classList.add("animate__fadeInLeft");
+        }
+        function animation3(){
+            document.querySelector(".form").classList.add("animate__fadeInUp")
+        }
+        var balls = document.querySelector(".ball");
+  document.onmousemove = function(){
+    var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+    //event.clientX => get the horizontal coordinate of the mouse
+    //event.clientY => get the Vertical coordinate of the mouse
+    //window.innerWidth => get the browser width
+    //window.innerHeight => get the browser height
+     balls.style.left = x;
+      balls.style.top = y;
+    };
+        </script>
+
+</div>
+</body>
 </html>
